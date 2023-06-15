@@ -10,8 +10,8 @@ from Utillities.XlUtills import ExcelUtills
 
 class TestLogin001():
     url = ReadConfig.getUrl()
-    username = ReadConfig.getUserName()
-    password = ReadConfig.getPassword()
+    #username = ReadConfig.getUserName()
+    #password = ReadConfig.getPassword()
 
     logger = LogGen.loggen()
     path = "D:\Project\SeleniumHandsonProject\TestData\TestLogin.xlsx"
