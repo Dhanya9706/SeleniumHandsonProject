@@ -1,0 +1,1 @@
+pytest -vsm 'sanity or regression' --html=./Reports/testlogin.html D:\Project\SeleniumHandsonProject\TestCases\ --browser chrome
