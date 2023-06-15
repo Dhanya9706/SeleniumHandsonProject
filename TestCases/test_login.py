@@ -27,7 +27,7 @@ class TestLogin001():
         lg.clickOnLogin()
 
         if lg.checkProduct() == True:
-            TestLogin001.logger.info("****************** Login Successful ********************")
+            TestLogin001.logger.info("****************** Login Successful 001 ********************")
         else:
             self.driver.save_screenshot("D:\\Project\\SeleniumHandsonProject\\Screenshots\\LoginTestFailed.png")
-            TestLogin001.logger.error("******************** Login Failed *************************")
+            TestLogin001.logger.error("******************** Login Failed 001 *************************")
