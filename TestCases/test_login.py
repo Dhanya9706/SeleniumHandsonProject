@@ -1,4 +1,3 @@
-import webbrowser
 import pytest
 
 from TestCases.conftest import setup
