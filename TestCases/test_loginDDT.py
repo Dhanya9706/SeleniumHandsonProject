@@ -8,7 +8,7 @@ from Utillities.ReadProperties import ReadConfig
 from  Utillities.CustomLogger import LogGen
 from Utillities.XlUtills import ExcelUtills
 
-class TestLogin001():
+class TestLogin002():
     url = ReadConfig.getUrl()
     #username = ReadConfig.getUserName()
     #password = ReadConfig.getPassword()
@@ -18,7 +18,7 @@ class TestLogin001():
 
     @pytest.mark.regression
     def test_Login(self,setup):
-        TestLogin001.logger.info("****************** Test Login 001 *********************")
+        TestLogin001.logger.info("****************** Test Login 002 *********************")
         TestLogin001.logger.info("*************** Test Login ***************")
         self.driver = setup
 
@@ -34,9 +34,9 @@ class TestLogin001():
             if lg.checkProduct() == True and ExcelUtills.readData(TestLogin001.path,'Input',r,3) == 'Pass':
                 ExcelUtills.writeData(TestLogin001.path,'Input',r,4,'Pass')
                 ExcelUtills.fillGreenColour(TestLogin001.path, 'Input', r, 4)
-                TestLogin001.logger.info("****************** Login Successful ********************")
+                TestLogin001.logger.info("****************** Login Successful 002 ********************")
             else:
                 ExcelUtills.writeData(TestLogin001.path, 'Input', r, 4, 'Fail')
                 ExcelUtills.fillRedColour(TestLogin001.path, 'Input', r, 4)
                 self.driver.save_screenshot("D:\\Project\\SeleniumHandsonProject\\Screenshots\\LoginTestFailed.png")
-                TestLogin001.logger.error("******************** Login Failed *************************")
+                TestLogin001.logger.error("******************** Login Failed 002 *************************")
