@@ -17,7 +17,7 @@ class TestLogin001():
     path = "D:\Project\SeleniumHandsonProject\TestData\TestLogin.xlsx"
 
     @pytest.mark.regression
-    def testLogin(self,setup):
+    def test_Login(self,setup):
         TestLogin001.logger.info("****************** Test Login 001 *********************")
         TestLogin001.logger.info("*************** Test Login ***************")
         self.driver = setup

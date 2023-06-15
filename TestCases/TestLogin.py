@@ -13,7 +13,7 @@ class TestLogin001():
     logger = LogGen.loggen()
 
     @pytest.mark.sanity
-    def testLogin(self,setup):
+    def test_Login(self,setup):
         TestLogin001.logger.info("****************** Test Login 001 *********************")
         TestLogin001.logger.info("*************** Test Login ***************")
 
